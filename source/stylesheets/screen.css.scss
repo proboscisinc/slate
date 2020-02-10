@@ -24,6 +24,12 @@ under the License.
 // GENERAL STUFF
 ////////////////////////////////////////////////////////////////////////////////
 
+*::-webkit-scrollbar { 
+  display: none !important;
+}
+* {
+  scrollbar-width: none;
+}
 html, body {
   color: $main-text;
   padding: 0;
@@ -612,4 +618,8 @@ html, body {
 
 .highlight, .highlight .w {
   background-color: $code-bg;
+}
+
+.highlight span.err {
+  color: #aeaeae !important;
 }
